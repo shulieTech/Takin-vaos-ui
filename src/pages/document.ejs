@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>链路压测</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link href="https://www.coty.com/sites/default/files/favicon-32x32.png" rel="shortcut icon" type="image/x-icon"> -->
+    <script>
+        var serverUrl = '<%= process.env.NODE_ENV === "development" ? process.env.DEV_HOST : "" %>/takin-web/api'
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?c4e57c964fbe9f8c6e65c90dbf4ddba8";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+        
+</head>
+
+<body>
+    <div id="root-slave"></div>
+    <!-- <script type="text/javascript" src="//js.users.51.la/21114307.js"></script> -->
+</body>
+
+</html>
