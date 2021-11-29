@@ -189,7 +189,9 @@ const getBlackListColumns = (
           btns.push(
             <Button
               type="primary"
-              onClick={() => router.push(`/pro/bottleneckTable/bottleneckDetails?exceptionId=${text?.rtSqlBottleneckId}`)}
+              onClick={() => {
+                router.push(`/pro/bottleneckTable/bottleneckDetails?exceptionId=${text?.rtSqlBottleneckId}`);
+              }}
             >
               卡慢
             </Button>
